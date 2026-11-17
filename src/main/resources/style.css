@@ -1,0 +1,212 @@
+/* Visual inspirado no WorldBox: painéis de madeira escura, bordas grossas, dourado nos destaques */
+
+.raiz {
+    -fx-background-color: #241e1a;
+    -fx-font-family: "Segoe UI", "Arial";
+}
+
+.label {
+    -fx-text-fill: #e8dcc0;
+}
+
+/* ---------- mapa ---------- */
+.moldura-mapa {
+    -fx-background-color: #1d1814;
+    -fx-padding: 4;
+}
+
+/* ---------- painéis ---------- */
+.painel {
+    -fx-background-color: #3a312a;
+    -fx-border-color: #1d1814;
+    -fx-border-width: 3;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-padding: 10;
+}
+
+.titulo {
+    -fx-text-fill: #f2c14e;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.dica {
+    -fx-text-fill: #a8977a;
+    -fx-font-size: 11px;
+}
+
+.barra-inferior {
+    -fx-background-color: #2e2621;
+    -fx-padding: 8;
+    -fx-border-color: #1d1814;
+    -fx-border-width: 3 0 0 0;
+}
+
+.grupo {
+    -fx-background-color: #3a312a;
+    -fx-border-color: #1d1814;
+    -fx-border-width: 2;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-padding: 6;
+}
+
+.titulo-grupo {
+    -fx-text-fill: #f2c14e;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.status {
+    -fx-text-fill: #f2c14e;
+    -fx-padding: 4 10 6 10;
+}
+
+/* ---------- botões ---------- */
+.botao {
+    -fx-background-color: #1d1814, #7a6a5b, #594c41;
+    -fx-background-insets: 0, 2, 4;
+    -fx-background-radius: 6, 5, 4;
+    -fx-text-fill: #f4e3c1;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-min-width: 70;
+    -fx-pref-height: 64;
+    -fx-content-display: top;
+    -fx-graphic-text-gap: 6;
+    -fx-cursor: hand;
+}
+
+.botao:hover {
+    -fx-background-color: #1d1814, #93806d, #6c5d50;
+}
+
+.botao:selected, .botao:pressed {
+    -fx-background-color: #1d1814, #f2c14e, #8f6f2e;
+}
+
+.botao-pequeno {
+    -fx-min-width: 44;
+    -fx-pref-height: 34;
+}
+
+/* ---------- slider e spinner ---------- */
+.slider .track {
+    -fx-background-color: #1d1814;
+}
+
+.slider .thumb {
+    -fx-background-color: #1d1814, #f2c14e;
+    -fx-background-insets: 0, 2;
+}
+
+.spinner .text-field {
+    -fx-background-color: #241e1a;
+    -fx-text-fill: #f4e3c1;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: #7a6a5b;
+}
+
+/* ---------- gráfico ---------- */
+.chart {
+    -fx-padding: 4;
+}
+
+.chart-plot-background {
+    -fx-background-color: #241e1a;
+}
+
+.chart-vertical-grid-lines,
+.chart-horizontal-grid-lines {
+    -fx-stroke: #3f352d;
+}
+
+.axis {
+    -fx-tick-label-fill: #cbbb9b;
+}
+
+.axis-label {
+    -fx-text-fill: #cbbb9b;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+}
+
+.chart-legend-item {
+    -fx-text-fill: #e8dcc0;
+}
+
+.chart-series-line {
+    -fx-stroke-width: 2px;
+}
+
+.default-color0.chart-series-line { -fx-stroke: #f4f1e8; }
+.default-color1.chart-series-line { -fx-stroke: #8fa3ab; }
+.default-color0.chart-legend-item-symbol { -fx-background-color: #f4f1e8; }
+.default-color1.chart-legend-item-symbol { -fx-background-color: #8fa3ab; }
+
+/* ---------- ficha do animal (inspetor) ---------- */
+.inspetor {
+    -fx-background-color: rgba(36, 30, 26, 0.92);
+    -fx-border-color: #f2c14e;
+    -fx-border-width: 2;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-padding: 8 10 8 10;
+}
+
+.inspetor .label {
+    -fx-font-size: 12px;
+}
+
+.inspetor .titulo {
+    -fx-font-size: 14px;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #7db649;
+    -fx-background-insets: 2;
+}
+
+.progress-bar .track {
+    -fx-background-color: #1d1814;
+}
+
+/* ---------- caixinha de escolha ---------- */
+.choice-box {
+    -fx-background-color: #1d1814, #594c41;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 5, 4;
+}
+
+.choice-box .label {
+    -fx-text-fill: #f4e3c1;
+    -fx-font-weight: bold;
+}
+
+/* ---------- abas do gráfico ---------- */
+.tab-pane .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #594c41;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #f2c14e;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #f4e3c1;
+    -fx-font-weight: bold;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #241e1a;
+}

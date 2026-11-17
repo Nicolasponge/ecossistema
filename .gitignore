@@ -1,0 +1,7 @@
+target/
+*.class
+.idea/
+populacao.csv
+dados/
+out/
+/CLAUDE.md
