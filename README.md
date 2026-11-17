@@ -51,27 +51,6 @@ mvn javafx:run
 | `animais.csv` | a ficha de cada animal vivo (genes, geração, pais, filhos, posição) |
 
 Sprites ficam em `src/main/resources/sprites` (animais 16x8, arbusto 16x16, olhando pra direita).
-
-## Onde está cada conceito (pra apresentação)
-
-| Conceito | Onde | Em uma frase |
-|---|---|---|
-| MVC | pacotes `model`, `view`, `controller` | o `model` não importa nada de JavaFX, por isso dá pra simular no terminal (pasta `ferramentas/`) |
-| Herança e classe abstrata | `Entity` > `Animal` > `Rabbit` / `Wolf`, e `Entity` > `Bush` | o que é comum fica em cima, o que muda fica na espécie |
-| Polimorfismo | `behave()`, `ehComida()`, `consegueVer()` em cada animal; `apply()` em cada ferramenta | o mesmo chamado faz coisas diferentes conforme o objeto |
-| Interfaces | `Tool`, `WorldObserver` | contratos: quem implementa promete ter aqueles métodos |
-| Encapsulamento | genes e energia privados em `Animal`, só com getters | a tela consegue ler a ficha, mas não consegue mexer nela |
-| Template Method (GoF) | `Animal.update()` (é `final`) | a receita da vida é a mesma; cada espécie preenche só as partes dela |
-| Strategy (GoF) | `Tool`: `PaintBiomeTool`, `EraseTool`, `SpawnTool`, `ClearEntitiesTool` | o controller só chama `apply()`, sem saber qual ferramenta é |
-| Observer (GoF) | `WorldObserver`, `World.addObserver()`, `StatsPanel` | o mundo avisa "mudou", e o gráfico se atualiza sozinho |
-| Creator (GRASP) | `createOffspring()` e `SpawnTool(Rabbit::new)` | cada espécie sabe criar o próprio filhote; não existe fábrica central |
-| Information Expert (GRASP) | `World.applyCoastRules()`, `World.nearestAnimal()`, `Animal.fome()` | quem tem a informação é quem faz a conta |
-| Controller (GRASP) | `GameController` (`start()` e `loop(deltaTime)`) | recebe o mouse e o teclado e coordena model e view |
-| Exceções | `InvalidPlacementException` (bicho na água); `IOException` no exportar/importar com mensagem amigável | o erro vira uma frase no rodapé, o jogo não fecha |
-| I/O (arquivos) | `DadosIO.exportar()` e `DadosIO.importarRelacoes()`; sprites em `Sprites` | escreve e lê arquivos nos dois sentidos |
-| Records e enums | `Stats`, `Vec2` (records); `Biome`, `EntityType`, `Sex` (enums) | dados imutáveis e listas fechadas de opções |
-| Coleções e lambdas | grade espacial em `World`, `List.of(...)` das ferramentas de limpar, `Rabbit::new` | |
-
 ## Referências da vida real usadas
 
 **Mundo**
